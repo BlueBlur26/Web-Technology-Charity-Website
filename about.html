@@ -1,0 +1,769 @@
+<DOCTYPE html>
+    <html>
+    <head>
+    <title>About Page</title>
+    <style>
+     body {
+            margin: 0;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .nav {
+            position: fixed;
+            top: 0;
+            height: 10vh;
+            width: 100vw;
+            background-color: rgb(0, 0, 0);
+            z-index: 999;
+        }
+        
+    
+        .nav ol{
+            margin: 0;
+            padding: 0;
+            float: right;
+            margin-right: 50px;
+        }
+        
+        .nav ol li {
+            display: inline-block;
+            margin: 33px 20px;
+            padding: 2px;
+        }
+        
+        .nav ol li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .nav ol li a:hover {
+            color: skyblue;
+            height: 3vh;
+            width: 10vw;
+            border-radius: 20px;
+        }
+
+    .nav ol li a.active {
+    color: #ff8080;
+    height: 3vh;
+    width: 13vw;
+    border-radius: 20px;
+        }
+        .logo {
+            color: rgb(255, 255, 255);
+            float:left;
+            font-size: 35px;
+            margin-right: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        
+        .header {
+            margin-top: 10vh;
+            height: 76vh;
+            background-image: url(Images/About\ -\ Header.jpg);
+            background-size: 100%;
+        }
+        
+        .box {
+            width: 35%;
+            height: 45%; 
+            border: none;
+            border: 8px solid rgb(0, 0, 0);
+            background: rgba(254, 254, 254, 0.68);
+            text-align: left;
+            padding: 20px;
+            position: relative;
+            left: 250px;
+            top: 100px;
+        }
+
+        .box h1{
+            font-size: 60px;
+        }
+
+        .box p{
+            font-size: 40px;
+        }
+
+       .box button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 20px;
+}
+
+.box button:hover{
+    background-color: #000;
+    color: aliceblue;
+}
+        
+        .flex{
+            display:flex;
+        }
+        
+        .flex div {
+            flex: 1;
+            border: 4px solid rgb(0, 0, 0);
+            margin: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            color:rgb(0, 0, 0);
+        }
+
+        .flex button {
+        background-color: #000000; /* Green */
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 20px;
+        }
+        
+        .flex div h1 {
+            background-color: rgb(0, 0, 0);
+            margin: 0;
+            padding: 8px;
+            color: white;
+        }
+        
+        .flex div p {
+            padding: 10px;
+        }
+        
+        .flex div button {
+            display: block;
+            margin: auto;
+        }
+        .flex div button:hover {
+            background-color: rgb(227, 201, 83);
+    color: aliceblue;
+        }
+        
+        .main {
+            display: flex;
+            color: white;
+            background-color: rgb(192, 165, 107);
+            margin: 10px;
+            padding: 0px;
+        }
+
+    .main-left{
+        float: left;
+        display: flex;
+        margin: 80px;
+        padding: 10px;
+        color: #000000;
+        font-size: 30px;
+        background-color: rgb(192, 165, 107);
+    }
+
+   
+
+    .main-right{
+        float: right;
+        font-size: 28px;
+        display: flex;
+        margin: 80px;
+        padding: 10px;
+        border-color: #fff;
+        background-color: rgb(192, 165, 107);
+    }
+       
+        
+
+        .main2{
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .footer {
+                height: 40vh;
+                background-image:url(Images/Gallery\ -\ Header.jpg);
+                background-size: 100%;
+                background-attachment: fixed;
+                display:flex;
+                align-items: center;
+            }
+            
+            .footer div {
+                margin: 10px;
+            }
+            
+            .footer h1 {
+                color: aliceblue;
+                background:rgb(0, 0, 0);
+                text-align: center;
+                font-size: 2em;
+                margin: 0;
+            }
+            
+            .footer p {
+                color: white;
+                background: rgba(0, 0, 0, 0.452);
+                text-align: center;
+                margin: 0;
+                padding: 20px;
+                font-size: 1.2em;
+            }
+
+            .map{
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background-color: #333;
+}
+
+  .btn {
+    background-color: #fff;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align:center;
+  }
+  
+  .btn:hover {
+    background-color: skyblue;
+  }
+    
+         .ma2{
+  text-align: center;
+  margin: 50px;
+  padding: 50px;
+         }
+
+  .ma2 img{
+    width: 15%;
+  }
+  .emailaddress{
+    width: 98.5%;
+    margin: 10px;
+    padding: 2px;
+    text-align: center;
+    font-weight: 600;
+    color: #f2f2f2;
+}
+
+.bottomnav {
+            top: 0;
+            height: 10vh;
+            width: 100vw;
+            z-index: 999;
+        }
+        
+    
+        .bottomnav ol{
+            margin: 0;
+            padding: 0;
+            float: right;
+            margin-right: 50px;
+        }
+        
+        .bottomnav ol li {
+            display: inline-block;
+            margin: 33px 20px;
+            padding: 2px;
+        }
+        
+        .bottomnav ol li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .bottomnav ol li a:hover {
+            color: skyblue;
+            height: 3vh;
+            width: 10vw;
+            border-radius: 20px;
+        }
+
+    .bottomnav ol li a.active {
+    color: #ffffff;
+    height: 3vh;
+    width: 13vw;
+    border-radius: 20px;
+        }
+
+        .logo3{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+            padding: 0px;
+            margin: 30px;
+            float: left;
+        }
+
+        body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #51b993;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0a0a0a;
+}
+
+.pic{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    background-color: #333;
+    text-align: center;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+  background-color: rgb(17, 233, 143); /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, rgb(37, 59, 255), rgb(11, 104, 167));
+ font-size: 20px;
+ font-weight: 700;
+
+}
+
+body {
+  color:rgb(0, 0, 0);
+  font-size: 2em;
+  line-height: 1.2;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 0px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+      .background{
+       border-radius: 5px;
+    background-color:none;
+    padding: 20px;
+    margin: 50px auto;   
+      }
+
+.AboutUs{
+    background-color:rgba(255, 255, 0, 0.671);
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+
+  
+  
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    height: 100vh;
+  }
+
+@media only screen and (max-width:1000px) {
+    /* For tablets: */
+   
+    .nav ol li {
+            display: inline-block;
+            margin: 18px 16px;
+        }
+
+        .nav ol li a {
+        font-size: 10px;
+    }
+
+    .logo{
+    font-size: 20px;
+  }
+
+
+ .grid{
+            width: 90vw;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: 300px 300px 250px;
+  }
+
+  .container{
+    width: 90VW;
+}
+
+.container img{
+    width: 300px;
+    height: 300px;
+}
+
+.container div p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.flex div {
+            border: 4px solid rgb(10, 128, 25);
+            margin: 2px;
+            padding:0px;
+            text-align: center;
+            color:white;
+            height: 37vh;
+            overflow-y: scroll;
+        }
+
+        
+        
+        .flex div h1 {
+            background-color: rgb(10, 128, 25);
+            margin: 0;
+            padding: 3px;
+            color: white;
+        }
+        
+        .flex div p {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+
+   
+
+    .main-right{
+        font-size: 10px;
+        display: flex;
+        margin: 70px;
+        padding: 10px;
+        
+    }
+
+footer {
+                height: 10vh;
+                background-image:url(MEDIA/bbb.png);
+                background-size: 100%;
+            }
+            
+            .footer div {
+                margin: 5px;
+            }
+            
+            .footer h1 {
+                font-size: 1.8em;
+                margin: 0;
+            }
+            
+            .footer p {
+                margin: 0;
+                padding: 10px;
+                font-size: 1.2em;
+            }
+
+            .header {
+            margin-top: 10vh;
+            height: 42vh;
+            background-image: url(MEDIA/pink\ pigoun.png);
+            background-size: 100%;
+        }
+        
+        .box {
+            width: 40%;
+            height: 45%;
+            left: 100px;
+            top: 80px;
+        }
+
+        .box h1{
+            font-size: 30px;
+        }
+
+        .box p{
+            font-size: 18px;
+        }
+
+        .btn {
+    background-color: #fff;
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 10px
+  }
+            
+
+}
+
+ 
+@media only screen and (max-width:650px) {
+    /* For mobile phones: */
+
+     
+    .nav ol li {
+            display: inline-block;
+            margin: 14px 10px;
+        }
+
+    .nav ol li a {
+        font-size: 10px;
+    }
+    .header {
+            margin-top: 10vh;
+            height: 36vh;
+            background-image: url(MEDIA/pink\ pigoun.png);
+            background-size: 100%;
+        }
+        
+        .box {
+            width: 40%;
+            height: 45%;
+            left: 100px;
+            top: 80px;
+        }
+
+        .box h1{
+            font-size: 26px;
+        }
+
+        .box p{
+            font-size: 18px;
+        }
+
+
+ .grid{
+            width: 95vw;
+            grid-template-columns: 1fr;
+            grid-template-rows: 300px;
+        }
+
+.container{
+    width: 95VW;
+    height: 2vh;
+}
+
+.container img{
+    width: 250px;
+    height: 250px;
+}
+
+.container div p{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+
+        
+        .flex div {
+            border: 4px solid rgb(0, 0, 0);
+            margin: 2px;
+            padding:0px;
+            text-align: center;
+            color:white;
+            overflow-y: scroll;
+            height: 40vh;
+        }
+
+        
+        
+        .flex div h1 {
+            background-color: rgb(0, 0, 0);
+            margin: 0;
+            padding: 3px;
+            color: white;
+        }
+        
+        .flex div p {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+
+.main-right{
+        font-size: 13px;
+        display: flex;
+        margin: 10px;
+        padding: 10px;
+        
+    }
+
+.footer div {
+                margin: 5px;
+            }
+            
+            .footer h1 {
+                font-size: 1.8em;
+                margin: 4px;
+            }
+            
+            .footer p {
+                margin: 4px;
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .btn {
+    background-color: #fff;
+    color: black;
+    font-size: 8px;
+    font-weight: 600;
+    padding: 8px 10px
+  }
+
+  .logo{
+    font-size: 12px;
+  }
+
+
+        
+
+}
+ 
+        
+    
+
+
+    </style>
+    </head>
+    
+    <body>
+    
+        <div class="nav">
+                <h1 class="logo">The Road To Finish</h1>
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donation.html">Donation</a></li>
+            </ol>
+        </div>
+    
+        <div class="header">
+            
+        </div>
+    
+        <div class="flex">
+            <div class="box1">
+                <h1>DONATE NOW</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus adipisci molestiae quidem possimus voluptate iste. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio cumque laborum exercitationem quos pariatur vitae ad dolor excepturi dolore fugiat, aperiam sit ducimus at, distinctio reprehenderit iure magni a officiis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi cum tenetur aperiam rerum perferendis voluptatibus, harum inventore incidunt porro quia architecto unde ipsum qui fugiat alias! Sint perspiciatis quaerat ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem adipisci laborum nam magnam? Molestias veritatis perferendis, adipisci perspiciatis excepturi asperiores odit? Quod omnis odio voluptatum laboriosam necessitatibus facilis ab molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptatum illo fuga itaque ullam accusamus laborum optio molestias et nam officia distinctio fugiat accusantium ipsum corrupti,</p>
+    
+            </div>
+            
+    
+            <div class="box2">
+                <h1>READ MORE</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus adipisci molestiae quidem possimus voluptate iste. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint optio accusamus sit nisi alias adipisci in iusto beatae inventore. Iusto velit a aspernatur aut libero quisquam excepturi incidunt quibusdam debitis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error modi illum nobis accusamus reiciendis sit quasi, non odit quo qui eum? Similique maxime perspiciatis ullam beatae? Sapiente itaque quam dolore! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, blanditiis! Reprehenderit ipsum harum unde officiis repellendus totam tempore, minima cumque corporis, ad facilis sit velit ex provident. Perferendis, voluptatem fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam at aut nesciunt, fuga accusamus dolores vero ad facere. Recusandae aliquam nemo dicta accusamus ducimus debitis, nihil dolores molestiae repudiandae.</p>
+
+            </div>
+    
+            <div class="box3">
+                    <h1>VIEW ACTIVITY</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus adipisci molestiae quidem possimus voluptate iste. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus dolores laudantium quo provident quisquam in magnam? Eius voluptas, quaerat eligendi maxime dicta animi odio ipsam porro, in deleniti nulla magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam autem quas, magni nostrum ratione aut perspiciatis aspernatur doloremque, consequuntur blanditiis ad quis repellat doloribus praesentium sequi. Accusamus vitae atque dolore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quos laborum, aspernatur sequi laboriosam ducimus eveniet voluptatibus molestiae accusamus facere officiis totam blanditiis ea corporis cum architecto commodi aliquam doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore possimus temporibus ex iusto, officiis quisquam a tempore minus, repudiandae dolores distinctio corporis cumque. </p>
+        
+            </div>
+    
+        </div>
+    
+       <div class="AboutUs">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, omnis dolores sapiente aperiam maxime ad provident, pariatur, harum qui labore laborum ipsa? Ea, vel et cumque ad sit sed. Nostrum!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, corrupti fugiat nisi quaerat facilis minus, optio nihil consequuntur dolorum rem repellendus laborum maiores quae suscipit quo dolores accusantium, accusamus voluptate?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic commodi dolor dolorem ipsa quod quasi totam reprehenderit accusantium minus ad consequuntur alias, fuga ipsum ratione, distinctio, velit laudantium! Illo, fugiat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore suscipit perferendis vero nam temporibus asperiores, commodi aut molestias maiores delectus iusto deserunt in libero tempora vitae ad natus, architecto animi!</p>
+      </div>
+
+
+    
+    
+        <div class="footer">
+
+            <div class="fbox1">
+                <h1>MARATHONS</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt non nesciunt in distinctio illum, aut ea neque explicabo odio aliquid hic, perspiciatis laboriosam pariatur? Veniam delectus placeat minus animi culpa.</p>
+            </div>
+
+            <div class="fbox2">
+                <h1>BLOGS</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt non nesciunt in distinctio illum, aut ea neque explicabo odio aliquid hic, perspiciatis laboriosam pariatur? Veniam delectus placeat minus animi culpa.</p>
+
+            </div>
+
+            <div class="fbox3">
+                <h1>LATEST NEWS</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt non nesciunt in distinctio illum, aut ea neque explicabo odio aliquid hic, perspiciatis laboriosam pariatur? Veniam delectus placeat minus animi culpa.</p>
+            </div>
+    
+        </div>
+
+     
+        <div class="map">
+
+           
+                      <div class="bottomnav">
+                        <ol>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="donation.html">Donation</a></li>
+            
+                        </ol>
+
+                        <div class="logo3">
+                            <h1>The Road To Finish</h1>
+                          </div>
+                    </div>
+
+                   
+                    
+
+                </div>   
+
+        </div>
+    
+    </body>
+    </html>
+    </DOCTYPE>
